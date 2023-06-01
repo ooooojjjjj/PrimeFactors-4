@@ -1,0 +1,2 @@
+### prime factor 
+PrimeFactors KATA
