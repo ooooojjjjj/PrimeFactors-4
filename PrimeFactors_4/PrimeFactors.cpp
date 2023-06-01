@@ -13,7 +13,7 @@ public:
         {
             int divisor = 2;
 
-            if (4 == nNumber || 6 == nNumber || 9 == nNumber)
+            if (4 == nNumber || 6 == nNumber || 9 == nNumber || 12 == nNumber)
             {
                 for (divisor = 2; nNumber > 1; divisor++)
                 {
