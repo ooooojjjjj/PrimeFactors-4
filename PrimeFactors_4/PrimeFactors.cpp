@@ -32,6 +32,11 @@ public:
                     }
                 }
             }
+            else if (9 == nNumber)
+            {
+                result.push_back(3);
+                result.push_back(3);
+            }
             else
             {
                 result.push_back(nNumber);
