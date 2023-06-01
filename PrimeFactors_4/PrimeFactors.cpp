@@ -19,6 +19,11 @@ public:
                     nNumber /= 2;
                 }
             }
+            else if (6 == nNumber)
+            {
+                result.push_back(2);
+                result.push_back(3);
+            }
             else
             {
                 result.push_back(nNumber);
