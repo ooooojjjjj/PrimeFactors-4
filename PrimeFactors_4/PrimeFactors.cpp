@@ -9,6 +9,15 @@ public:
     {
         vector<int> result = {};
 
+        for (int divisor = 2; nNumber > 1; divisor++)
+        {
+            while (nNumber % divisor == 0)
+            {
+                result.push_back(divisor);
+                nNumber /= divisor;
+            }
+        }
+
         return result;
     }
 };
