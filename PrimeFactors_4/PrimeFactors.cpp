@@ -9,6 +9,11 @@ public:
     {
         vector<int> result = {};
 
+        if (2 == nNumber)
+        {
+            result.push_back(2);
+        }
+
         return result;
     }
 };
