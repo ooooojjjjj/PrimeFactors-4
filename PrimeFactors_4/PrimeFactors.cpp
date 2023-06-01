@@ -11,18 +11,26 @@ public:
 
         if (1 < nNumber)
         {
+            int divisor = 2;
+
             if (4 == nNumber)
             {
-                while (nNumber % 2 == 0)
+                while (nNumber % divisor == 0)
                 {
-                    result.push_back(2);
-                    nNumber /= 2;
+                    result.push_back(divisor);
+                    nNumber /= divisor;
                 }
             }
             else if (6 == nNumber)
             {
-                result.push_back(2);
-                result.push_back(3);
+                for (divisor = 2; nNumber > 1; divisor++)
+                {
+                    while (nNumber % divisor == 0)
+                    {
+                        result.push_back(divisor);
+                        nNumber /= divisor;
+                    }
+                }
             }
             else
             {
