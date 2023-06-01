@@ -9,24 +9,12 @@ public:
     {
         vector<int> result = {};
 
-        if (1 < nNumber)
+        for (int divisor = 2; nNumber > 1; divisor++)
         {
-            int divisor = 2;
-
-            if (4 == nNumber || 6 == nNumber || 9 == nNumber || 12 == nNumber)
+            while (nNumber % divisor == 0)
             {
-                for (divisor = 2; nNumber > 1; divisor++)
-                {
-                    while (nNumber % divisor == 0)
-                    {
-                        result.push_back(divisor);
-                        nNumber /= divisor;
-                    }
-                }
-            }
-            else
-            {
-                result.push_back(nNumber);
+                result.push_back(divisor);
+                nNumber /= divisor;
             }
         }
 
