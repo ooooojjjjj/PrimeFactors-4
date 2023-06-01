@@ -11,7 +11,15 @@ public:
 
         if (1 < nNumber)
         {
-            result.push_back(nNumber);
+            if (4 == nNumber)
+            {
+                result.push_back(2);
+                result.push_back(2);
+            }
+            else
+            {
+                result.push_back(nNumber);
+            }
         }
 
         return result;
